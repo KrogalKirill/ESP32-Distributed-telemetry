@@ -1,0 +1,25 @@
+# Файл: rumqttd.toml (в папке где Cargo.toml)
+
+id = 1
+
+[router]
+id = 1
+max_connections = 100
+max_segment_size = 10485760
+max_segment_count = 10
+max_inflight_count = 100
+max_outgoing_packet_count = 100
+
+[console]
+listen = "0.0.0.0:3030"
+
+[v4.1]
+name = "main_mqtt"
+listen = "0.0.0.0:1883"
+next_connection_delay_ms = 1
+
+[v4.1.connections]
+connection_timeout_ms = 10000
+max_payload_size = 20480
+max_inflight_count = 100
+dynamic_filters = true

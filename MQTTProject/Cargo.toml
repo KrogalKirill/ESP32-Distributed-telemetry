@@ -1,0 +1,13 @@
+[package]
+name = "MQTTProject"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rumqttd = "0.17"
+rumqttc = "0.23"
+tokio = { version = "1", features = ["full"] }
+serde_json = "1"
+toml = "0.5"
+env_logger = "0.10"
+log = "0.4"
