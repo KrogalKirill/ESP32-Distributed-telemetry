@@ -7,7 +7,7 @@ use std::thread;
 use std::time::Duration;
 
 fn main() {
-    env_logger::init();
+    //env_logger::init();
     
     // ═════ ПОТОК 1: Брокер ═════
     let broker_handle = thread::spawn(|| {
