@@ -1,5 +1,4 @@
 *.docx
-*.pdf
 *.log
 *.bac
 target/
